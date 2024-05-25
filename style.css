@@ -1,119 +1,128 @@
-/* Resetting default margin and padding */
-body, h1, h2, h3, p, ul, li, figure, figcaption, blockquote, pre, hr {
+/* Base styles */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #222831;
+    color: #EEEEEE;
+}
+
+a {
+    text-decoration: none;
+    color: #76ABAE;
+}
+
+
+h1 {
+    color: #fff;
+    font-size: 7vw;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 1.1em;
+    text-transform: none;
+}
+
+.small-title {
+    text-transform: uppercase;
+    color: #EDB713;
+    letter-spacing: 4px;
+    font-size: 2vw;
+    font-weight: bold;
+    font-family: poppins;
+}
+/* Header */
+header {
+    background-color: #31363F;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+nav ul {
+    list-style: none;
     margin: 0;
     padding: 0;
 }
 
-/* Basic styling */
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+nav li {
+    display: inline-block;
+    margin-right: 20px;
 }
 
-.section {
-    padding: 50px 0;
+section {
+    background-color: rgb(0, 0, 0, 0.6);
+    color: #fff;  /* Assuming white color for the quote */
+    height: 100vh;  /* Set height to 100vh for full viewport */
 }
 
-h1, h2, h3 {
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 20px;
-}
-
-h1 {
-    font-size: 36px;
-}
-
-h2 {
-    font-size: 24px;
-}
-
-p {
-    margin-bottom: 20px;
-}
-
-/* Fullscreen video background */
-.fullscreen-video {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-}
-
-.fullscreen-video video {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: -1000;
-}
-
-.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-}
-
-.gradient-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0));
-}
-
-/* Expert cards */
-.expert-cards {
-    display: flex;
-    justify-content: space-between;
-}
-
-.expert-card {
-    width: 30%;
-    background-color: #f9f9f9;
+.quote-container {
+    height: 100vh;  /* Set height to 100vh for full screen */
     padding: 20px;
-    margin-bottom: 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.expert-card img {
+.quote-container p {
+    margin-bottom: 10px;
+    font-style: italic;  /* Italicize the quote text */
+}
+
+
+#hero {
+    position: fixed;  /* Make the video section fixed */
+    top: 0;
+    left: 0;
     width: 100%;
-    height: auto;
-    border-radius: 50%;
+    height: 100vh;  /* Set height to 100vh for full viewport */
+    z-index: -1;  /* Move the video behind content */
 }
 
-.expert-card h3 {
-    margin-top: 10px;
+#hero video {
+    width: 100%;  /* Stretch video to cover the entire section */
+    height: 100%;   /* Stretch video to cover the entire section */
+    object-fit: cover;  /* Maintain aspect ratio while filling the section */
 }
 
-/* Form styling */
+.quote-container {
+    text-align: center;
+    color: #fff;  /* Assuming white color for the quote */
+    padding: 20px;
+    margin: 0 auto;  /* Center the quote container horizontally */
+}
+
+.quote-container p {
+    margin-bottom: 10px;
+    font-style: italic;  /* Italicize the quote text */
+}
+
+
 form {
-    max-width: 500px;
-    margin: 0 auto;
+    background-color: #222831;
+    padding: 20px;
+    width: 95%;  /* Stretch video to cover the entire section */
 }
 
-input[type="text"], textarea {
-    width: 100%;
+input, textarea {
+    background-color: #31363F;
+    color: #EEEEEE;
+    border: 1px solid #EEEEEE;
     padding: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    width: 92%;
+    resize: vertical;
 }
 
 button {
-    padding: 10px 20px;
-    background-color: #333;
-    color: #fff;
+    background-color: #76ABAE;
+    color: #222831;
     border: none;
+    padding: 10px 20px;
     cursor: pointer;
 }
 
-button:hover {
-    background-color: #555;
+/* Footer */
+footer {
+    background-color: #31363F;
+    color: #EEEEEE;
+    text-align: center;
+    padding: 10px;
 }

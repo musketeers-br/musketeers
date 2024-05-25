@@ -8,88 +8,81 @@
     <!-- Add any necessary CSS libraries for carousels, etc. -->
 </head>
 <body>
-    <!-- Home Section -->
-    <section id="home" class="section">
-        <!-- Welcome message -->
-        <div class="fullscreen-video">
-            <video autoplay muted loop>
-                <source src="video.mp4" type="video/mp4">
-            </video>
-            <div class="overlay"></div>
-            <div class="gradient-overlay"></div>
-            <div class="content">
-                <h1>Welcome to Musketeers</h1>
-                <!-- Add any other content -->
-            </div>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#quote">Home</a></li>
+                <li><a href="#experts">About us</a></li>
+                <li><a href="#experts">Meet our Experts</a></li>
+                <li><a href="#portfolio">Our Portfolio</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <video autoplay loop muted playsinline>
+            <source src="./assets/video.mp4" type="video/mp4">
+        </video>
+    </section>
+
+    <section id="quote">
+        <div class="quote-container">
+            <h1 class="thin" id="to-be-update">
+                <span class="fir">"The merit of all things</span><br>
+                <span class="sec">lies in their difficulty."</span><br>
+            </h1>
+            <p>Alexandre Dumas - The three musketeers.</p>
+            <p class="small-title">Welcome! We are the Musketeers.</p>
         </div>
     </section>
 
-    <!-- Our Portfolio Section -->
-    <section id="portfolio" class="section">
+    <section id="portfolio">
         <h2>Our Portfolio</h2>
-        <!-- Carousel for portfolio items -->
-        <div class="carousel">
-            <!-- Portfolio item 1 -->
+        <div class="portfolio-grid">
             <div class="portfolio-item">
-                <!-- Portfolio item content -->
-            </div>
-            <!-- Portfolio item 2 -->
-            <div class="portfolio-item">
-                <!-- Portfolio item content -->
-            </div>
-            <!-- Add more portfolio items as needed -->
-        </div>
-    </section>
-
-    <!-- Meet Our Experts Section -->
-    <section id="experts" class="section">
-        <h2>Meet Our Experts</h2>
-        <!-- Expert cards -->
-        <div class="expert-cards">
-            <!-- Expert card 1 -->
-            <div class="expert-card">
-                <!-- Expert details -->
-            </div>
-            <!-- Expert card 2 -->
-            <div class="expert-card">
-                <!-- Expert details -->
-            </div>
-            <!-- Expert card 3 -->
-            <div class="expert-card">
-                <!-- Expert details -->
+                <img src="app1.png" alt="App 1">
+                <h3>Name of the App</h3>
+                <p>Summary of the app...</p>
+                <a href="#">Download</a>
+                <ul class="premios">
+                    <li>Award 1</li>
+                    <li>Award 2</li>
+                </ul>
             </div>
         </div>
     </section>
 
-    <!-- Reviews Section -->
-    <section id="reviews" class="section">
-        <h2>Reviews</h2>
-        <!-- Carousel for reviews -->
-        <div class="carousel">
-            <!-- Review 1 -->
-            <div class="review">
-                <!-- Review content -->
+    <section id="experts">
+        <h2>Meet our Experts</h2>
+        <div class="time-grid">
+            <div class="time-card">
+                <img src="foto1.jpg" alt="Member Name">
+                <h3>Member Name</h3>
+                <p>Job Title</p>
+                <ul class="redes-sociais">
+                    <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                </ul>
             </div>
-            <!-- Review 2 -->
-            <div class="review">
-                <!-- Review content -->
-            </div>
-            <!-- Add more reviews as needed -->
         </div>
     </section>
 
-    <!-- Contact Us Section -->
-    <section id="contact" class="section">
+    <section id="contact">
         <h2>Contact Us</h2>
-        <!-- Contact form -->
-        <form action="#" method="post">
-            <input type="text" name="name" placeholder="Your Name">
-            <textarea name="message" placeholder="Your Message"></textarea>
+        <form action="#">
+            <input type="text" name="nome" placeholder="Name">
+            <input type="email" name="email" placeholder="Email">
+            <textarea name="mensagem" placeholder="Your message"></textarea>
             <button type="submit">Send</button>
         </form>
     </section>
 
-    <!-- Script for carousel functionality and dark mode switching -->
+    <footer>
+        <p>&copy; 2024 This site does not use trackers or cookies.</p>
+    </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
