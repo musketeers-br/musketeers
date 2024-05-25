@@ -64,6 +64,7 @@ section {
 .quote-container p {
     margin-bottom: 10px;
     font-style: italic;  /* Italicize the quote text */
+    font-size: 25px;
 }
 
 
@@ -92,6 +93,38 @@ section {
 .quote-container p {
     margin-bottom: 10px;
     font-style: italic;  /* Italicize the quote text */
+}
+
+
+.experts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));  /* Responsive grid layout */
+    gap: 20px;   /* Add some spacing between cards */
+}
+
+.expert-card {
+    text-align: center;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);   /* Add subtle shadow */
+}
+
+.avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;  /* Rounded avatar image */
+    margin-bottom: 10px;
+}
+
+
+.github-link {
+    display: inline-block;
+    margin-top: 10px;
+    color: #fff;
+}
+
+.github-link i {
+    font-size: 20px;
 }
 
 
