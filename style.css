@@ -8,8 +8,9 @@ body {
 }
 
 a {
+    background-color: rgb(0, 0, 0, 0.85);
+    color: #fff;
     text-decoration: none;
-    color: #76ABAE;
 }
 
 
@@ -19,6 +20,16 @@ h1 {
     font-weight: 600;
     letter-spacing: 0;
     line-height: 1.1em;
+    text-transform: none;
+}
+
+h2 {
+    color: #EDB713;
+    font-size: 30px;
+    letter-spacing: 0;
+    line-height: 1.1em;
+    padding-top: 33px;
+    text-align: center;
     text-transform: none;
 }
 
@@ -32,8 +43,8 @@ h1 {
 }
 /* Header */
 header {
-    background-color: #31363F;
     position: fixed;
+    text-align: center;
     top: 0;
     width: 100%;
     z-index: 100;
@@ -48,6 +59,10 @@ nav ul {
 nav li {
     display: inline-block;
     margin-right: 20px;
+}
+
+nav a {
+    padding: 10px;
 }
 
 section {
@@ -67,6 +82,22 @@ section {
     font-size: 25px;
 }
 
+.logo-container {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;  /* Clip overflowing content */
+    border-radius: 50%;  /* Create a circle */
+}
+
+.logo-container svg {
+    width: 100%;
+    height: 100%;
+}
+
+.logo-container img {
+    width: 100%;
+}
 
 #hero {
     position: fixed;  /* Make the video section fixed */
@@ -98,8 +129,9 @@ section {
 
 .experts-grid {
     display: grid;
+    background-color:  rgb(0, 0, 0, 0.65);
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));  /* Responsive grid layout */
-    gap: 20px;   /* Add some spacing between cards */
+    gap: 35px;   /* Add some spacing between cards */
 }
 
 .expert-card {
@@ -108,14 +140,6 @@ section {
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);   /* Add subtle shadow */
 }
-
-.avatar {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;  /* Rounded avatar image */
-    margin-bottom: 10px;
-}
-
 
 .github-link {
     display: inline-block;
@@ -158,4 +182,145 @@ footer {
     color: #EEEEEE;
     text-align: center;
     padding: 10px;
+}
+
+
+.expert-name {
+    margin-top: 15px;
+    font-size: 1.5em;
+}
+
+.avatar {
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    border: 5px solid #272133;
+    margin-top: 20px;
+    box-shadow: 0 10px 50px #76ABAE;
+}
+
+
+.draw-border {
+    box-shadow: inset 0 0 0 4px #76ABAE;
+    color: #58afd1;
+    -webkit-transition: color 0.25s 0.0833333333s;
+    transition: color 0.25s 0.0833333333s;
+    position: relative;
+}
+
+.draw-border::before,
+.draw-border::after {
+    border: 0 solid transparent;
+    box-sizing: border-box;
+    content: '';
+    pointer-events: none;
+    position: absolute;
+    width: 0rem;
+    height: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.draw-border::before {
+    border-bottom-width: 4px;
+    border-left-width: 4px;
+}
+
+.draw-border::after {
+    border-top-width: 4px;
+    border-right-width: 4px;
+}
+
+.draw-border:hover {
+    color: #EDB713;
+}
+
+.draw-border:hover::before,
+.draw-border:hover::after {
+    border-color: #EDB713;
+    -webkit-transition: border-color 0s, width 0.25s, height 0.25s;
+    transition: border-color 0s, width 0.25s, height 0.25s;
+    width: 100%;
+    height: 100%;
+}
+
+.draw-border:hover::before {
+    -webkit-transition-delay: 0s, 0s, 0.25s;
+    transition-delay: 0s, 0s, 0.25s;
+}
+
+.draw-border:hover::after {
+    -webkit-transition-delay: 0s, 0.25s, 0s;
+    transition-delay: 0s, 0.25s, 0s;
+}
+
+.btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    line-height: 1.5;
+    font: 700 1.2rem 'Roboto Slab', sans-serif;
+    padding: 0.75em 2em;
+    letter-spacing: 0.05rem;
+    margin: 1em;
+    width: 13rem;
+}
+
+.btn:focus {
+    outline: 2px dotted #76ABAE;
+}
+
+
+.social-icons {
+    padding: 0;
+    list-style: none;
+    margin: 1em;
+}
+
+.social-icons li {
+    display: inline-block;
+    margin: 0.15em;
+    position: relative;
+    font-size: 1em;
+}
+
+.social-icons i {
+    color: #fff;
+    position: absolute;
+    top: 0.95em;
+    left: 0.96em;
+    transition: all 265ms ease-out;
+}
+
+.social-icons a {
+    display: inline-block;
+}
+
+.social-icons a:before {
+    transform: scale(1);
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1);
+    content: " ";
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
+    display: block;
+    background: linear-gradient(45deg, #76ABAE, #31363F);
+    transition: all 265ms ease-out;
+}
+
+.social-icons a:hover:before {
+    transform: scale(0);
+    transition: all 265ms ease-in;
+}
+
+.social-icons a:hover i {
+    transform: scale(2.2);
+    -ms-transform: scale(2.2);
+    -webkit-transform: scale(2.2);
+    color: #76ABAE;
+    background: -webkit-linear-gradient(45deg, #76ABAE, #31363F );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 265ms ease-in;
 }
