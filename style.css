@@ -431,7 +431,7 @@ footer {
 }
 
 .projcard:hover .card-img {
-    transform: scale(1.05) rotate(1deg);
+    transform: rotate(1deg);
 }
 
 .projcard-textbox {

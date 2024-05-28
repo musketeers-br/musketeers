@@ -100,7 +100,7 @@ const contests = [
     {
         "name": "Iris on FHIR",
         "url": "https://openexchange.intersystems.com/package/iris-on-fhir",
-        "img": "assets/apps/fhirgen.png",
+        "img": "assets/apps/onfire.png",
         "awards": ["expert-3", "community-1"],
         "subtitle": "Third place on InterSystems FHIR Accelerator Contest",
         "description": `InterSystems IRIS FHIR Accelerator Service (FHIRaaS) - a cloud-based solution for managing FHIR APIs.`
