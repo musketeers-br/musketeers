@@ -2,7 +2,7 @@ const contests = [
     {
         "name": "Iris-MediCoPilot",
         "url": "https://openexchange.intersystems.com/package/iris-medicopilot",	
-        "img": "assets/apps/medicopilot-cover.jpg",
+        "img": "assets/apps/medicopilot.png",
         "awards": ["expert-2", "community-1"],
         "subtitle": "This project was second place of InterSystems Vector Search, GenAI and ML Contest",
         "description": `Iris-MediCoPilot, is designed to optimize patient clinical outcomes by reducing hospitalization time and supporting the development of resident and novice physicians. Additionally, it contributes to reducing financial waste in the healthcare system by improving the monitoring of pregnant patients, thereby decreasing risks and enhancing their safety.
@@ -53,8 +53,136 @@ const contests = [
         "awards": ["expert-3", "community-1","expert-3", "community-1"],
         "subtitle": "Two times Community choice and third place on InterSystems Interoperability Contest and Grand-Prix 2022",
         "description": ``
+    },
+    {
+        "name": "kaggle-socrata-generator",
+        "url": "https://openexchange.intersystems.com/package/iris-kaggle-socrata-generator",
+        "img": "assets/apps/socrata.png",
+        "awards": ["expert-2", "community-1"],
+        "subtitle": "Second place on InterSystems Datasets Contest",
+        "description": ``
+    },
+    {
+        "name": "Iris-Disguise",
+        "url": "https://openexchange.intersystems.com/package/iris-disguise",
+        "img": "assets/apps/disguise.png",
+        "awards": ["expert-1", "community-2"],
+        "subtitle": "First place on InterSystems Security Contest",
+        "description": `Iris-Disguise is a data anonymization tool. 
+        It helps protect privacy by removing personally identifiable information (PII) from data sets. It offers different ways to anonymize data.`
+    },
+    {
+        "name": "Zap API Scan",
+        "url": "https://openexchange.intersystems.com/package/zap-api-scan-sample",
+        "img": "assets/apps/zap.png",
+        "awards": ["expert-2", "community-1"],
+        "subtitle": "Second place on InterSystems Security Contest",
+        "description": `The application helps developers validate the security of their REST APIs by scanning them with ZAP.
+            Zap API Scan REST APIs searching for vulnerabilities.`
+    },
+    {
+        "name": "Pop Song Analytics",
+        "url": "https://openexchange.intersystems.com/package/pop-song-analytics",
+        "img": "assets/apps/pop.png",
+        "awards": ["expert-3"],
+        "subtitle": "Third place on InterSystems IRIS Analytics",
+        "description": `The project demonstrates using Iris for data storage and analysis, along with Power BI for creating insightful visualizations,
+        using InterSystems Iris to analyze pop song data from Billboard Hot 100 between 2000 and 2018.`
+    },
+    {
+        "name": "FHIR-Integratedml",
+        "url": "https://openexchange.intersystems.com/package/fhir-integratedml-example",
+        "img": "assets/apps/fihriml.png",
+        "awards": ["expert-1", "community-1"],
+        "subtitle": "Winner of Artificial Intelligence and Machine Learning Contest",
+        "description": `FHIR-Integratedml utilizes InterSystems IRIS and FHIR (Fast Healthcare Interoperability Resources) for Machine Learning (ML) and Artificial Intelligence (AI) in healthcare.`
+    },
+    {
+        "name": "Iris on FHIR",
+        "url": "https://openexchange.intersystems.com/package/iris-on-fhir",
+        "img": "assets/apps/fhirgen.png",
+        "awards": ["expert-3", "community-1"],
+        "subtitle": "Third place on InterSystems FHIR Accelerator Contest",
+        "description": `InterSystems IRIS FHIR Accelerator Service (FHIRaaS) - a cloud-based solution for managing FHIR APIs.`
+    },
+    {
+        "name": "ZPM Explorer",
+        "url": "https://openexchange.intersystems.com/package/zpm-explorer",
+        "img": "assets/apps/zpm.png",
+        "awards": ["expert-2", "community-2"],
+        "subtitle": "Second place on InterSystems Developer Tools Contest",
+        "description": `ZPM Explorer is a graphical user interface for InterSystems Package Manager (ZPM). It helps users discover and manage InterSystems applications available through ZPM.
+        Overall, ZPM Explorer simplifies the process of finding, installing, and managing InterSystems applications from the ZPM package repository.`
+    },
+    {
+        "name": "IRIS RAD Studio",
+        "url": "https://openexchange.intersystems.com/package/iris-rad-studio",
+        "img": "assets/apps/rad.png",
+        "awards": ["expert-2"],
+        "subtitle": "Second place on the first InterSystems Grand Prix",
+        "description": `IRIS RAD Studio it's a low-code solution that came to make the developer's life easier; Allowing everyone to create their CRUD based on a simple class definition or even a CSV file.
+        `
+    },
+    {
+        "name": "IRIS Image Index",
+        "url": "https://openexchange.intersystems.com/package/iris-image-index-demo",
+        "img": "assets/apps/iris-image-index.png",
+        "awards": ["expert-3", "community-1"],
+        "subtitle": "First place on InterSystems Multi-Model Contest",
+        "description": `IRIS Image Index it's a custom image similarity index for InterSystems IRIS`
+    },
+    {
+        "name": "IRIS-FHIR-Portal",
+        "url": "https://openexchange.intersystems.com/package/iris-fhir-portal",
+        "img": "assets/apps/fhirportal.png",
+        "awards": ["expert-1", "community-1"],
+        "subtitle": "Winner of InterSystems IRIS for Health FHIR",
+        "description": `IRIS-FHIR-Portal is an application built using FHIR functionalities in InterSystems IRIS for Health. It allows users to easily access and view their patient data in a clear and organized manner. The application displays a patient list with filters, along with detailed information for each selected patient, including demographics, allergies, vital signs, laboratory results, and immunizations. It also provides a transparent view of all data retrieved from FHIR resources.`
+    },
+    {
+        "name": "iris4health-fhir-analytics",
+        "url": "https://openexchange.intersystems.com/package/iris4health-fhir-analytics",
+        "img": "assets/apps/iris4health.png",
+        "awards": ["expert-2", "community-2"],
+        "subtitle": "Second place on InterSystems IRIS for Health FHIR",
+        "description": `iris4health-fhir-analytics creates reusable chart components for visualizing data from FHIR resources in InterSystems IRIS for Health. The key feature is that these charts require no configuration. They automatically determine the data format based on the FHIR resource type (e.g., Observation) and property (e.g., code) to create a standardized data model. This model can then be easily adapted to work with any charting library,`
+    },
+    {
+        "name": "iris-vaccine-tracker",
+        "url": "https://openexchange.intersystems.com/package/iris-vaccine-tracker",
+        "img": "assets/apps/vaccine.png",
+        "awards": ["community-2"],
+        "subtitle": "Second place by community nomination on InterSystems Multi-Model",
+        "description": `This project has the intention to show COVID-19 vaccination track count around the world. Using as backend InterSystems IRIS in a multi-model schema.`
+    },
+    {
+        "name": "iris-analytics-notebook",
+        "url": "https://openexchange.intersystems.com/package/iris-analytics-notebook",
+        "img": "assets/apps/notebook.png",
+        "awards": ["expert-1", "community-2"],
+        "subtitle": "First place on InterSystems Analytics",
+        "description": `A notebook approach to use IRIS analytics capabilities.`
+    },
+    {
+        "name": "iris-analytics-package",
+        "url": "https://openexchange.intersystems.com/package/iris-analytics-package",
+        "img": "assets/apps/analypack.png",
+        "awards": ["expert-3", "community-1"],
+        "subtitle": "Third place on InterSystems Analytics",
+        "description": `This project has the intention to show a basic approach using the Analytics capabilities of InterSystems IRIS.
+            Especially for those who already using InterSystems IRIS, but without taking advantage of Analytics. The idea is to prove how simple it is.`
+    },
+    {
+        "name": "IRIS Interoperability Message Viewer",
+        "url": "https://openexchange.intersystems.com/package/IRIS-Interoperability-Message-Viewer",
+        "img": "assets/apps/interop.png",
+        "awards": ["expert-2", "expert-3", "community-1", "community-2"],
+        "subtitle": "Winner of InterSystems Interoperability Contest",
+        "description": `IRIS Interoperability Message Viewer reimagines the existing Visual Trace tool for InterSystems data integration. `
     }
 ];
+
+console.log(contests.length);
 
 const menuLinks = document.querySelectorAll('nav a');
 
@@ -81,7 +209,9 @@ window.onload = (event) => {
         });
         card.innerHTML = `
             <div class="projcard-innerbox">
-                <img class="projcard-img" src="${contest.img}" />
+                <div class="card-img">
+                    <img class="projcard-img" src="${contest.img}" />
+                </div>
                 <div class="projcard-textbox">
                     <div class="projcard-title">${contest.name}</div>
                     <div class="projcard-subtitle">${contest.subtitle}</div>
