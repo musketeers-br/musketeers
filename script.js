@@ -1,7 +1,7 @@
 const contests = [
     {
         "name": "Iris-MediCoPilot",
-        "url": "https://openexchange.intersystems.com/package/iris-medicopilot",	
+        "url": "https://openexchange.intersystems.com/package/iris-medicopilot",
         "img": "assets/apps/medicopilot.png",
         "awards": ["expert-2", "community-1"],
         "subtitle": "This project was second place of InterSystems Vector Search, GenAI and ML Contest",
@@ -10,7 +10,7 @@ const contests = [
         `
     },
     {
-        "name": "Iris-FHIRfy",	
+        "name": "Iris-FHIRfy",
         "url": "https://openexchange.intersystems.com/package/iris-fhirfy",
         "img": "assets/apps/fhirfy.png",
         "awards": ["expert-1", "community-1"],
@@ -50,7 +50,7 @@ const contests = [
         "name": "Iris-Megazord",
         "url": "https://openexchange.intersystems.com/package/iris-megazord",
         "img": "assets/apps/megazord.png",
-        "awards": ["expert-3", "community-1","expert-3", "community-1"],
+        "awards": ["expert-3", "community-1", "expert-3", "community-1"],
         "subtitle": "Two times Community choice and third place on InterSystems Interoperability Contest and Grand-Prix 2022",
         "description": ``
     },
@@ -179,6 +179,62 @@ const contests = [
         "awards": ["expert-2", "expert-3", "community-1", "community-2"],
         "subtitle": "Winner of InterSystems Interoperability Contest",
         "description": `IRIS Interoperability Message Viewer reimagines the existing Visual Trace tool for InterSystems data integration. `
+    },
+    {
+        "name": "interoperability-integratedml-adapter",
+        "url": "https://openexchange.intersystems.com/package/interoperability-integratedml-adapter",
+        "img": "assets/apps/mladapter.png",
+        "awards": ["expert-3"],
+        "subtitle": "Third place on InterSystems Interoperability Contest",
+        "description": `An IRIS Interoperability adapter to use ML models managed by IRIS IntegratedML.`
+    },
+    {
+        "name": "NPM-IRIS",
+        "url": "https://openexchange.intersystems.com/package/npm-iris",
+        "img": "assets/apps/npm.png",
+        "awards": ["expert-1", "community-1"],
+        "subtitle": "Winner of InterSystems Full Stack Contest",
+        "description": `Project & Task Management using InterSystems IRIS`
+    },
+    {
+        "name": "iris-integratedml-monitor",
+        "url": "https://openexchange.intersystems.com/package/iris-integratedml-monitor-example",
+        "img": "assets/apps/integratedml-monitor.png",
+        "awards": ["expert-1", "community-2"],
+        "subtitle": "Winner of InterSystems IRIS AI Contest",
+        "description": `extend %Monitor.Adaptor to monitor IRIS IntegrateML models performance metrics, based on template for IntegratedML.`
+    },
+    {
+        "name": "iris-history-monitor",
+        "url": "https://openexchange.intersystems.com/package/iris-history-monitor",
+        "img": "assets/apps/irishistmon.png",
+        "awards": ["expert-1", "community-2"],
+        "subtitle": "Winner of InterSystems IRIS with REST API Contest",
+        "description": `This project has the intention to show in a visual way the information generate by the System Monitor ^%SYSMONMGR and a different approach for the System Dashboard and System Processes.`
+    },
+    {
+        "name": "simple-spellchecker",
+        "url": "https://openexchange.intersystems.com/package/simple-spellchecker",
+        "img": "assets/apps/spellchecker.png",
+        "awards": ["community-2"],
+        "subtitle": "Second place in Community nomination of InterSystems IRIS with REST API Contest",
+        "description": `Can be used to suggest the correct spelling of text similar to Google “Did you mean” but based on a pure InterSystems IRIS ObjectScript implementation.`
+    },
+    {
+        "name": "SQL Builder",
+        "url": "https://openexchange.intersystems.com/package/sql-builder",
+        "img": "assets/apps/sqlbuilder.png",
+        "awards": ["community-1"],
+        "subtitle": "Community nomination in the first InterSystems Contest",
+        "description": `A flexible and powerful SQL query string builder for InterSystems IRIS`,
+    },
+    {
+        "name": "ISC-Utils",
+        "url": "https://openexchange.intersystems.com/package/isc-utils",
+        "img": "assets/apps/iscutl.png",
+        "awards": ["expert-3"],
+        "subtitle": "Third place in Expert nomination of the first InterSystems Contest",
+        "description": `A small kit with useful features to help you track weather, exchange rates, conversion for temperature, and length scales.`
     }
 ];
 
@@ -197,21 +253,25 @@ menuLinks.forEach(link => {
 window.onload = (event) => {
     const portfolio = document.getElementById('portfolio'),
         colors = ['blue', 'red', 'green'];
-    let k = 0;
-    contests.forEach(contest => {
+    let k = 0, total_awards = 0;
+    contests.forEach((contest, idx) => {
         const card = document.createElement('div');
         card.classList.add('projcard');
-        card.classList.add('projcard-'+colors[k]);
-        k = (k+1)%3;
+        card.classList.add('projcard-' + colors[k]);
+        k = (k + 1) % 3;
         let awards = '';
+        total_awards += contest.awards.length;
         contest.awards.forEach(award => {
             awards += `<div><img src="https://openexchange.intersystems.com/assets/img/rewards/${award}.svg" alt="${award}"></div>`;
         });
+        const cover = `
+            <div class="card-img">
+                <img class="projcard-img" src="${contest.img}" />
+            </div>
+        `;
         card.innerHTML = `
             <div class="projcard-innerbox">
-                <div class="card-img">
-                    <img class="projcard-img" src="${contest.img}" />
-                </div>
+                ${(idx % 2 == 0)? cover : ''}
                 <div class="projcard-textbox">
                     <div class="projcard-title">${contest.name}</div>
                     <div class="projcard-subtitle">${contest.subtitle}</div>
@@ -220,12 +280,16 @@ window.onload = (event) => {
                     <div class="projcard-awards">${awards}
                     </div>
                 </div>
+                ${(idx % 2 == 0)? '' : cover }
             </div> 
         `;
 
         card.addEventListener('click', (event) => {
-            window.open(contest.url,"");
+            window.open(contest.url, "");
         });
         portfolio.appendChild(card);
     });
+    document.getElementById('total_apps').textContent = contests.length;
+    document.getElementById('total_awards').textContent = total_awards;
+
 };
