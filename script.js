@@ -252,13 +252,13 @@ menuLinks.forEach(link => {
 
 window.onload = (event) => {
     const portfolio = document.getElementById('portfolio'),
-        colors = ['blue', 'red', 'green'];
+        colors = ['blue', 'red', 'green', 'orange', 'yellow', 'brown', 'grey'];
     let k = 0, total_awards = 0;
     contests.forEach((contest, idx) => {
         const card = document.createElement('div');
         card.classList.add('projcard');
         card.classList.add('projcard-' + colors[k]);
-        k = (k + 1) % 3;
+        k = (k + 1) % 7;
         let awards = '';
         total_awards += contest.awards.length;
         contest.awards.forEach(award => {
