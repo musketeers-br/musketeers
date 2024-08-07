@@ -1,5 +1,14 @@
 const contests = [
     {
+        "name": "SQLZilla",
+        "url": "https://openexchange.intersystems.com/package/sqlzilla",
+        "img": "assets/apps/sqlzilla.png",
+        "awards": ["expert-1", "community-1"],
+        "subtitle": "Big winner of InterSystems Python Contest 2024",
+        "description": `SQLzilla leverages the power of Python and AI to simplify data access through natural language SQL query generation, bridging the gap between complex data queries and users with minimal programming experience.
+        SQLzilla is an innovative project that transforms the way users interact with databases. By integrating with InterSystems IRIS, we’ve crafted a tool that allows even those unfamiliar with SQL to effortlessly extract and analyze data across various tables.
+        `
+    },{
         "name": "Iris-MediCoPilot",
         "url": "https://openexchange.intersystems.com/package/iris-medicopilot",
         "img": "assets/apps/medicopilot.png",
