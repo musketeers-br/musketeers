@@ -1,5 +1,51 @@
 const contests = [
     {
+        "name": "Artisan",
+        "url": "https://openexchange.intersystems.com/package/dc-artisan",
+        "img": "assets/apps/artisan.png",
+        "awards": ["expert-4", "community-3"],
+        "subtitle": "This project was third place Community nomination on InterSystems Developer Tools 2025",
+        "description": `DC Artisan is a VSCode extension tool for Prompt Enhance & RAG Pipeline
+        `
+    },
+    {
+        "name": "FHIRInsight",
+        "url": "https://openexchange.intersystems.com/package/FHIRInsight",
+        "img": "assets/apps/fhirinsight.png",
+        "awards": ["expert-1", "community-2"],
+        "subtitle": "Winner of InterSystems FHIR and Digital Health Interoperability Contest 2025",
+        "description": `FHIRInsight: Transform complex health data into clear, actionable insights. A tool to convert FHIR blood test data into a comprehensive, easy-to-understand analysis report.
+        `
+    },
+    {
+        "name": "Facilis",
+        "url": "https://openexchange.intersystems.com/package/Facilis",
+        "img": "assets/apps/facilis.png",
+        "awards": ["expert-4", "community-4"],
+        "subtitle": "This project was fourth place on InterSystems AI programming Contest",
+        "description": `Facilis is an AI-powered solution designed to streamline API integration by extracting structured specifications from natural language descriptions. 
+            Powered by CrewAI, Facilis ensures a more efficient and modular approach to handling API documentation and interoperability.
+        `
+    },
+    {
+        "name": "Vault-Link",
+        "url": "https://openexchange.intersystems.com/package/vault-link",
+        "img": "assets/apps/vault.png",
+        "awards": ["expert-1", "community-4"],
+        "subtitle": "winner of InterSystems Bringing Ideas to Reality 2024",
+        "description": `Vault-Link is a security solution designed to safeguard sensitive information on InterSystems IRIS environments.
+        `
+    },
+    {
+        "name": "SQL-Embeddings",
+        "url": "https://openexchange.intersystems.com/package/sql-embeddings",
+        "img": "assets/apps/sqlembeddings.png",
+        "awards": ["expert-2", "community-3"],
+        "subtitle": "This project was second place on InterSystems Developer Tools 2024",
+        "description": ` SQL-Embedding is a versatile solution that simplifies the process of creating and utilizing embeddings for vector search directly within SQL queries. 
+        By providing a unified interface, you can seamlessly access a wide range of embedding models, enabling efficient and effective vector search operations.       `
+    },
+    {
         "name": "SQLZilla",
         "url": "https://openexchange.intersystems.com/package/sqlzilla",
         "img": "assets/apps/sqlzilla.png",
