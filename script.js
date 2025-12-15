@@ -1,5 +1,14 @@
 const contests = [
     {
+        "name": "IrisOASTestGen",
+        "url": "https://openexchange.intersystems.com/package/IrisOASTestGen",
+        "img": "assets/apps/IrisOASTestGen.png",
+        "awards": ["expert-2", "community-2"],
+        "subtitle": "This project was second place on Community and Experts nomination on InterSystems 'Bringing Ideas to Reality' Contest 2025",
+        "description": `This tool is an OpenAPI Generator designed specifically for Intersystems IRIS. It ingests an OpenAPI Specification 2.0 (Swagger) document and automatically produces robust, maintainable, and executable ObjectScript code to validate your IRIS REST APIs.
+        `
+    },
+    {
         "name": "Artisan",
         "url": "https://openexchange.intersystems.com/package/dc-artisan",
         "img": "assets/apps/artisan.png",
